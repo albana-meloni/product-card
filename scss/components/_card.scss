@@ -1,0 +1,77 @@
+.card {
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 1rem;
+  background-color: map-get($colors, myWhite);
+  max-width: 550px;
+  display: flex;
+  flex-direction: column;
+  &__img {
+    height: 100%;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  .content {
+    padding: 1.2rem 1.5rem;
+    &__label {
+      text-transform: uppercase;
+      font-size: 13px;
+      letter-spacing: 4px;
+      color: map-get($colors, myGrayBlue);
+    }
+    &__title {
+      color: map-get($colors, myDarkBlue);
+      font-family: 'Fraunces', serif;
+      font-size: 2rem;
+      line-height: 1;
+      margin: 0.5rem 0;
+    }
+    &__txt {
+      color: map-get($colors, myGrayBlue);
+      font-size: 14px;
+      margin: 1rem 0;
+    }
+    &__pricing {
+      margin: 1rem 0 0.5rem;
+      display: flex;
+      align-items: center;
+      .price {
+        @extend .content__title;
+        color: map-get($colors, myDarkCyan);
+      }
+      .old-price {
+        font-size: 14px;
+        color: map-get($colors, myGrayBlue);
+        margin-left: 1.5rem;
+        text-decoration: line-through;
+      }
+    }
+    &__btn {
+      border: 0;
+      outline: 0;
+      border-radius: 10px;
+      width: 100%;
+      margin: 0.5rem 0;
+      padding: 1rem;
+      font-weight: 700;
+      cursor: pointer;
+      color: map-get($colors, myWhite);
+      background-color: map-get($colors, myDarkCyan);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 250ms ease 0s;
+      img {
+        margin-right: 1rem;
+      }
+      &:hover {
+        background-color: hsl(158, 26%, 25%);
+      }
+    }
+  }
+}
+
+@import '../medias/card-media';

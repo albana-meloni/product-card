@@ -1,0 +1,17 @@
+@media only screen and (min-width: 768px) {
+  .card {
+    flex-direction: row;
+    .content {
+      padding: 2rem 2rem 2rem 1rem;
+      width: 50%;
+    }
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .card {
+    max-width: 600px;
+    .content {
+      width: 100%;
+    }
+  }
+}

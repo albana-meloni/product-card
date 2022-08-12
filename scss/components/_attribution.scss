@@ -1,0 +1,9 @@
+.attribution {
+  color: map-get($colors, myGrayBlue);
+  text-align: center;
+  font-size: small;
+  a {
+    color: map-get($colors, myDarkCyan);
+    font-weight: 700;
+  }
+}
